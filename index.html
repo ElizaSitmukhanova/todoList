@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
+	<link rel="stylesheet" href="css/main.css"/>
+	<title>ToDo APP</title>
+</head>
+<body>
+
+	<div class="container">
+
+		<div class="display-4 mb-2">ToDo Application</div>
+		<div class="h4 mb-5">Список задач </div>
+
+		<!-- List of tasks -->
+		<div class="card mb-4">
+			<ul id="tasksList" class="list-group list-group-flush">
+<!-- 
+				<li id="emptyList" class="list-group-item empty-list">
+					<div class="empty-list__title">Список дел пуст</div>
+				</li>
+ -->
+		<!-- 		<li class="list-group-item d-flex justify-content-between task-item">
+					<span class="task-title">Купить молоко</span>
+					<div class="task-item__buttons">
+						<button type="button" data-action="complete" class="btn-action">
+							Complete
+						</button>
+						<button type="button" data-action="delete" class="btn-action">
+							Delete
+						</button>
+					</div>
+				</li>
+ -->
+			</ul>
+		</div>
+		<!-- //List of tasks -->
+
+		<!-- Form -->
+		<div class="card bg-light" >
+			<div class="card-header">Добавить новую задачу</div>
+			<div class="card-body">
+				<form id="form">
+					<div class="form-group">
+						<input type="text" class="form-control" id="taskInput" placeholder="Текст задачи" required>
+						<small id="emailHelp" class="form-text text-muted">Что делаем, сколько времени тратим, какой результат получаем.</small>
+					</div>
+					<button type="submit" class="btn btn-primary  btn-lg active">Добавить</button>
+
+				</form>
+			</div>
+		</div>
+		<!-- //Form  -->
+<div class="buttons">
+		<button id="honest" data-action="honesttask" class="btn btn-secondary "> четный элемент</button>
+		<button id="odd" data-action="oddtask"  class="btn btn-secondary "> нечетный элемент</button>
+		<button id="first" data-action="deletedfirst"  class="btn btn-secondary "> удалить первую задачу </button>
+		<button id="last" data-action="deletedlast" class="btn btn-secondary "> удалить последнюю задачу </button>
+</div>
+	</div>
+	<script src="js/main.js"></script>
+</body>
+</html>
